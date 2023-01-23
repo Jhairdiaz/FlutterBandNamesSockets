@@ -1,13 +1,13 @@
 class Band {
 
-  String id = '';
-  String name = 'name';
-  int votes = 0;
+  String id;
+  String name;
+  int votes;
 
   Band({
-    id,
-    name,
-    votes
+    required this.id,
+    required this.name,
+    required this.votes
   });
 
   factory Band.fromMap( Map<String, dynamic> obj )
